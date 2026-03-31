@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+// Smart-Git CLI Executable
+
+const SmartGit = require('../src/index');
+
+const smartGit = new SmartGit();
+
+// Command-line interface to handle user input to SmartGit
+const cli = require('commander');
+
+cli.version('1.0.0').description('A command line interface for SmartGit');
+
+// Define your command options here
+// For example:
+// cli.command('commit').action(() => smartGit.commit());
+
+cli.parse(process.argv);
+
+if (!process.argv.slice(2).length) {
+  cli.outputHelp();
+}
