@@ -1,0 +1,1 @@
+{\n  "name": "smart-git",\n  "version": "1.0.0",\n  "description": "A smart Git client\n  ",\n  "main": "src/index.js",\n  "bin": {\n    "smart-git": "src/cli.js"\n  },\n  "scripts": {\n    "test": "echo \"Error: no test specified\" && exit 1"\n  },\n  "author": "Breno Sillva","license": "ISC"\n}
